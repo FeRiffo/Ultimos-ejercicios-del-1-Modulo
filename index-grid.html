@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRid</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: darkcyan;
+            font-family: tahoma;
+        }
+        main{
+            display: grid;
+            width: 900px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 60px 40px 70px 500px 70px;
+            grid-template-areas: "logo logo logo"
+                                  "nav nav nav"
+                                  "header header header"
+                                  "sidebar section section"
+                                  "footer footer footer";
+            gap: 10px;
+
+            margin: 30px auto;
+
+        }
+        div{
+            background-color: rgb(20, 205, 205);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo{
+            grid-area: logo;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .header{
+            grid-area: header;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .section{
+            grid-area: section;
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<!--
+    6 divs
+    5 filas
+    3 columnas
+-->
+<body>
+    <main>
+        <div class="logo">Logo</div>
+        <div class="nav">Nav</div>
+        <div class="header">Header</div>
+        <div class="sidebar">Side Bar</div>
+        <div class="section">Section</div>
+        <div class="footer">Footer</div>
+
+
+    </main>
+    
+</body>
+</html>
